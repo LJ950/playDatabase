@@ -1,0 +1,16 @@
+{
+  "name": "playdatabase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-data": "node ./db/data/compileData.js",
+    "setup-test-db": "psql -f ./db/test-setup.sql && NODE_ENV=test knex seed:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.16.5",
+    "pg": "^7.10.0"
+  }
+}
