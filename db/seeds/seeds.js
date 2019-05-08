@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const data = JSON.parse(
   fs.readFileSync(
-    "/home/luke/northcoders/ontrack/playDatabase/db/data/compiledData.json",
+    "/Users/baldipshergill/Desktop/playDatabase/db/data/compiledData.json",
     "utf8"
   )
 );
