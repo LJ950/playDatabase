@@ -89,7 +89,9 @@ const Table = connection.define(
 //   }
 // );
 
-connection.sync();
+connection.sync().then(function() {
+  Table.create;
+});
 // connection.sync({ force: true }).then(() => {
 //   console.log(`Database & tables created!`);
 // });

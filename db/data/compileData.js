@@ -1,7 +1,6 @@
 const path = require("path");
 const fs = require("fs");
 const directoryPath = path.join(__dirname, "raw-data");
-// console.log(directoryPath);
 
 fs.readdir(directoryPath, function(err, files) {
   const data = [];
