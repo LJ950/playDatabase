@@ -6,9 +6,9 @@
   "scripts": {
     "compile-data": "node ./db/data/compileData.js",
     "setup-test-db": "psql -f ./db/test-setup.sql && NODE_ENV=test knex seed:run",
-    "seed:prod": "NODE_ENV=test DB_URL=$(heroku config:get DATABASE_URL) knex seed:run",
-    "migrate:latest:prod": "NODE_ENV=production DB_URL=$(heroku config:get DATABASE_URL) knex migrate:latest",
-    "migrate:rollback:prod": "NODE_ENV=production DB_URL=$(heroku config:get DATABASE_URL) knex migrate:rollback"
+    "seed:prod": "NODE_ENV=production DATABASE_URL=$(heroku config:get DATABASE_URL) knex seed:run",
+    "migrate:latest:prod": "NODE_ENV=production DATABASE_URL=$(heroku config:get DATABASE_URL) knex migrate:latest",
+    "migrate:rollback:prod": "NODE_ENV=production DATABASE_URL=$(heroku config:get DATABASE_URL) knex migrate:rollback"
   },
   "author": "",
   "license": "ISC",
